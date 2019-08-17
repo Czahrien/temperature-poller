@@ -20,7 +20,7 @@ def main():
 
         reading = {
             'date': datetime.utcnow().isoformat() + 'Z',
-            "device":  parts[-1],
+            "device":  parts[-2],
             "crc_pass": 'YES' == lines[0].split(" ")[-1],
             "temperature": int(lines[1].split("=")[-1]),
             "raw_data": contents
