@@ -1,0 +1,1 @@
+API_ENDPOINT = 'http://example.com/api/temperature-data-points/'
