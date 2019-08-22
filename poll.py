@@ -28,7 +28,7 @@ def main():
         print(reading)
 
         try:
-            resp = requests.post(config.API_ENDPOINT, json=reading)
+            resp = requests.post(**config.API_ENDPOINT, json=reading)
             resp.raise_for_status()
         except requests.exceptions.HTTPError as err:
             syslog(str(err))

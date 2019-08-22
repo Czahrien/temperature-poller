@@ -1,1 +1,4 @@
-API_ENDPOINT = 'http://example.com/api/temperature-data-points/'
+API_ENDPOINT = {
+    'url': 'http://example.com/api/temperature-data-points/',
+    'auth': ('user', 'password')
+}
